@@ -324,12 +324,17 @@
                     </div>
                     <div class="field btns">
                         <button class="prev-5 prev">Previous</button>
-                        <button class="submit">Submit</button>
+                        <button class="submit" onclick={popup}>Submit</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+    <script>
+        function popup() {
+            alert("Your Data has been Successfully Uploaded");    
+        }
+        </script>
     <style>
         @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
@@ -730,7 +735,7 @@
             }
         }
 
-    </script>
+    </>
 </body>
 
 </html>
